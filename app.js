@@ -20,7 +20,10 @@ const Item = mongoose.model("Item", itemsSchema);
 const item1 = new Item({
   name: "Drink water, stay hydrated."
 });
-const defaultItems = [item1];
+const item2 = new Item({
+  name: "Go to to-do-list.cyclic.app/about for instructions."
+});
+const defaultItems = [item1, item2];
 
 const listSchema = {
   name: String,
